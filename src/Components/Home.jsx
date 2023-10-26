@@ -1,5 +1,7 @@
 import React from 'react'
 import profile from '../assets/profile.png';
+import Skills from './Skills';
+import Projects from './Projects';
 const Home = () => {
     // Add all responsive size here and jzt work on that Rather then checking for every divices!!!
     // make u r screen full small and define classes of tailwind,then define classes for sm ,and also for md,lg,xl,2xl 
@@ -10,8 +12,8 @@ const Home = () => {
     // xl	1280px
     // 2xl	1536px
     return (
-        <div className=" w-full h-[100vh] mt-24 flex justify-center items-baseline">
-            <div className="mx-8 border-2 border-gray-600 w-full h-[45vh]  flex justify-center items-center rounded-2xl md:h-[70vh]">
+        <div className=" w-full h-[100vh] mt-24 flex justify-baseline items-center flex-col">
+            <div className=" border-2 border-gray-600 w-[95%] h-[45vh]  flex justify-center items-center rounded-2xl md:h-[70vh]">
                 <div className=" mx-4 my-6 w-full h-[38vh] flex justify-center items-baseline md:h-[60vh] md:flex md:justify-center md:items-center ">
                     <div className=" flex w-full h-[18rem]  md:h-full justify-center items-center md:gap-10 lg:gap-0">
                         <div className="relative  w-[16rem] h-[16rem] text-xl z-0  lg:w-[45rem] lg:h-[25rem] lg:p-10 lg:flex lg:justify-center lg:items-start lg:flex-col">
@@ -27,19 +29,12 @@ const Home = () => {
                             <img src={profile} alt='img' className=" w-42 h-56 md:w-[22rem] md:h-[18rem] lg:w-[35rem] lg:h-[24rem]" />
                         </div>
                     </div>
-                    <div className="">
-
-                    </div>
                 </div>
             </div>
+            <Skills></Skills>
+            <Projects></Projects>
         </div>
     )
 }
-// echo "# portfolio-" >> README.md
-// git init
-// git add README.md
-// git commit -m "first commit"
-// git branch -M main
-// git remote add origin https://github.com/Charan-bavaji/portfolio-.git
-// git push -u origin main
+
 export default Home
