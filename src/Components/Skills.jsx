@@ -30,25 +30,47 @@ const Skills = () => {
                     <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                         <h1 className="">Frontend</h1>
                     </div>
-                    <div className='w-[95%] h-auto px-3 py-3 flex flex-wrap justify-center items-center'>
-                        <SkillBox icon={html} name={"html"} />
-                        <SkillBox icon={css} name={"css"} />
-                        <SkillBox icon={javaScript} name={"javaScript"} />
-                        <SkillBox icon={react1} name={"react1"} />
-                        <SkillBox icon={tailwind} name={"tailwind"} />
+                    <div className='w-[95%] h-auto px-1 py-1 flex flex-wrap justify-center items-center'>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={html} name={"html"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={css} name={"css"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={javaScript} name={"javaScript"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={react1} name={"react1"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={tailwind} name={"tailwind"} />
+                        </div>
                     </div>
                 </div>
                 <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-slate-500 rounded-3xl">
                     <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                         <h1 className=" ">Other</h1>
                     </div>
-                    <div className='w-[95%] h-auto px-3 py-3 flex flex-wrap justify-center items-center'>
-                        <SkillBox icon={git} name={"git"} />
-                        <SkillBox icon={github} name={"github"} />
-                        <SkillBox icon={linux} name={"linux"} />
-                        <SkillBox icon={postMan} name={"postMan"} />
-                        <SkillBox icon={vsCode} name={"vsCode"} />
-                        <SkillBox icon={npm} name={"npm"} />
+                    <div className='w-[95%] h-auto px-1 py-1 flex flex-wrap justify-center items-center'>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={git} name={"git"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={github} name={"github"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={linux} name={"linux"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={postMan} name={"postMan"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={vsCode} name={"vsCode"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={npm} name={"npm"} />
+                        </div>
 
                     </div>
                 </div>
@@ -56,11 +78,19 @@ const Skills = () => {
                     <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                         <h1 className=" ">Backend</h1>
                     </div>
-                    <div className='w-[95%] h-auto px-3 py-3 flex flex-wrap justify-center items-center md:h-[18rem] lg:h-[12.5rem]'>
-                        <SkillBox icon={java1} name={"java1"} />
-                        <SkillBox icon={nodeJs} name={"nodeJs"} />
-                        <SkillBox icon={express1} name={"express1"} />
-                        <SkillBox icon={mongooDb1} name={"mongooDb1"} />
+                    <div className='w-[95%] h-auto px-1 pt-3 pb-4 flex flex-wrap justify-center items-center md:h-[18rem] lg:h-[12.5rem]'>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={java1} name={"java1"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={nodeJs} name={"nodeJs"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={express1} name={"express1"} />
+                        </div>
+                        <div className="p-1 m-1">
+                            <SkillBox icon={mongooDb1} name={"mongooDb1"} />
+                        </div>
                     </div>
                 </div>
             </div>

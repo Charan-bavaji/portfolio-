@@ -16,6 +16,9 @@ import nodeJs from "./node.webp";
 import express1 from "./express.png";
 import mongooDb1 from "./mongoo.png";
 import java1 from "./java.png";
+
+// project
+import project1 from "./pro1.png";
 export {
     html,
     css,
@@ -31,5 +34,6 @@ export {
     nodeJs,
     express1,
     mongooDb1,
-    java1
+    java1,
+    project1
 }

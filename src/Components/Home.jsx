@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import profile from '../assets/profile.png';
 import Skills from './Skills';
 import Projects from './Projects';
+// import Certificates from './Certificates';
 const Home = () => {
     // Add all responsive size here and jzt work on that Rather then checking for every divices!!!
     // make u r screen full small and define classes of tailwind,then define classes for sm ,and also for md,lg,xl,2xl 
@@ -31,10 +32,11 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Skills></Skills>
+            <Skills />
             <Projects></Projects>
+            {/* <Certificates /> */}
         </div>
     )
 }
 
-export default Home
+export default Home;
