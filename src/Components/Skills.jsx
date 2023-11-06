@@ -21,7 +21,7 @@ const Skills = () => {
     // 2xl	1536px
 
     return (
-        <div className=" mt-5 w-[95%] h-[auto] border-2 border-slate-700 rounded-2xl">
+        <section id='Skills' className=" mt-5 w-[95%] h-[auto] border-2 border-slate-700 rounded-2xl md:w-[80%] lg:w-[80%]">
             <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                 <h1 className=""> Skills</h1>
             </div>
@@ -30,7 +30,7 @@ const Skills = () => {
                     <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                         <h1 className="">Frontend</h1>
                     </div>
-                    <div className='w-[95%] h-auto px-1 py-1 flex flex-wrap justify-center items-center'>
+                    <div className='w-[95%] h-auto px-1 py-1 flex flex-wrap justify-center items-center lg:pb-4'>
                         <div className="p-1 m-1">
                             <SkillBox icon={html} name={"html"} />
                         </div>
@@ -78,7 +78,7 @@ const Skills = () => {
                     <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                         <h1 className=" ">Backend</h1>
                     </div>
-                    <div className='w-[95%] h-auto px-1 pt-3 pb-4 flex flex-wrap justify-center items-center md:h-[18rem] lg:h-[12.5rem]'>
+                    <div className='w-[95%] h-auto px-1 pt-1 flex flex-wrap justify-center items-center md:h-[auto] lg:h-auto lg:pb-4'>
                         <div className="p-1 m-1">
                             <SkillBox icon={java1} name={"java1"} />
                         </div>
@@ -94,7 +94,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 export default Skills;

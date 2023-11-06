@@ -14,27 +14,29 @@ const Home = () => {
     // 2xl	1536px
     return (
         <div className=" w-full h-[100vh] mt-24 flex justify-baseline items-center flex-col">
-            <div className=" border-2 border-gray-600 w-[95%] h-[45vh]  flex justify-center items-center rounded-2xl md:h-[70vh]">
-                <div className=" mx-4 my-6 w-full h-[38vh] flex justify-center items-baseline md:h-[60vh] md:flex md:justify-center md:items-center ">
-                    <div className=" flex w-full h-[18rem]  md:h-full justify-center items-center md:gap-10 lg:gap-0">
-                        <div className="relative  w-[16rem] h-[16rem] text-xl z-0  lg:w-[45rem] lg:h-[25rem] lg:p-10 lg:flex lg:justify-center lg:items-start lg:flex-col">
-                            <span className="text-sm">-hello</span>
-                            <h1 className='tracking-[0.1rem] md:text-2xl lg:text-5xl'>I'am <span className="text-red-700 text-2lg md:text-3xl lg:text-6xl">Charan R</span></h1>
-                            <h1 className='relative tracking-[0.1rem] md:text-2xl lg:text-6xl lg:relative lg:left-0'>Frontend Developer</h1>
-                            <div className='my-2'>
-                                <p className=" text-[8px] leading-3 md:text-[10px] lg:tracking-wider lg:text-[14px] lg:leading-5"> a simple example of a marketing page component that uses a stacked layout on small screens,</p>
-                            </div>
-                            <button className=" w-20 h-10 py-1.5 px-2 text-xs my-4 border-2 border-gray-600 rounded-md lg:relative lg:top-10 lg:w-36 lg:text-[14px]">View CV</button>
+            <div className=" border-2 border-gray-600 w-[95%] h-[auto] py-6  flex justify-center items-center rounded-2xl md:w-[80%]">
+                <div className="flex justify-center items-center flex-col-reverse p-5 gap-[-1rem] sm:flex-row">
+                    <div className="max-w-sm  flex justify-start items-start flex-col sm:gap-5 md:gap-7 lg:max-w-md">
+                        <div>
+                            <span className=" mb-[-3px] text-xs font-bold tracking-[1px] lg:text-sm">-hello</span>
+                            <h1 className=" text-2xl tracking-[1px] md:text-3xl lg:text-4xl">I'am <span className=" text-3xl text-red-600 md:text-4xl lg:text-5xl">Charan R</span></h1>
+                            <h1 className=' text-3xl text-red-600 tracking-[1px] md:text-4xl lg:text-5xl'>Frontend Developer</h1>
+                            <p className=" text-xs lg:py-2 lg:text-[14px]"> a simple example of a marketing page component that uses a stacked layout on small screens
+                                simple example of a marketing page component that u,</p>
                         </div>
-                        <div className="relative w-auto h-auto z-0  lg:w-[40rem] lg:h-[25rem] lg:flex lg:justify-center lg:items-center">
-                            <img src={profile} alt='img' className=" w-42 h-56 md:w-[22rem] md:h-[18rem] lg:w-[35rem] lg:h-[24rem]" />
+                        <div className=' mt- pt-2 '>
+                            <button className="w-[4rem] h-8  text-sm  border-2 border-gray-600 rounded-md md:w-[6rem] md:h-10 cursor-pointer">View CV</button>
                         </div>
+                    </div>
+                    <div className=" max-w-sm max-h-fit lg:max-w-lg">
+                        <img src={profile} alt='img' className="" />
                     </div>
                 </div>
             </div>
             <Skills />
             <Projects></Projects>
             {/* <Certificates /> */}
+
         </div>
     )
 }

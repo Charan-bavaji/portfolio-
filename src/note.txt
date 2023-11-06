@@ -1,0 +1,1 @@
+correct that index for nav and other img in project

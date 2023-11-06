@@ -1,3 +1,9 @@
+// socialMedia
+import github1 from "./github1.png";
+import linkdin from "./linkdin.png";
+import twitter from "./twitter.png";
+import insta from "./insta.png";
+// frontend
 import html from "./html.webp";
 import css from "./css.webp";
 import javaScript from "./javascript.webp";
@@ -13,12 +19,14 @@ import git from "./git.webp";
 import github from "./gitHub.png";
 // backend
 import nodeJs from "./node.webp";
-import express1 from "./express.png";
+import express1 from "./express1.png";
 import mongooDb1 from "./mongoo.png";
 import java1 from "./java.png";
 
 // project
 import project1 from "./pro1.png";
+
+
 export {
     html,
     css,
@@ -35,5 +43,9 @@ export {
     express1,
     mongooDb1,
     java1,
-    project1
+    project1,
+    github1,
+    linkdin,
+    twitter,
+    insta,
 }
