@@ -2,6 +2,7 @@ import React from 'react';
 import profile from '../assets/profile.png';
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from './Contact';
 // import Certificates from './Certificates';
 const Home = () => {
     // Add all responsive size here and jzt work on that Rather then checking for every divices!!!
@@ -13,7 +14,7 @@ const Home = () => {
     // xl	1280px
     // 2xl	1536px
     return (
-        <div className=" w-full h-[100vh] mt-24 flex justify-baseline items-center flex-col">
+        <div className=" w-full h-auto mt-24 flex justify-baseline items-center flex-col bg-no-repeat">
             <div className=" border-2 border-gray-600 w-[95%] h-[auto] py-6  flex justify-center items-center rounded-2xl md:w-[80%]">
                 <div className="flex justify-center items-center flex-col-reverse p-5 gap-[-1rem] sm:flex-row">
                     <div className="max-w-sm  flex justify-start items-start flex-col sm:gap-5 md:gap-7 lg:max-w-md">
@@ -35,6 +36,8 @@ const Home = () => {
             </div>
             <Skills />
             <Projects></Projects>
+            <Contact />
+
             {/* <Certificates /> */}
 
         </div>
