@@ -5,10 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      'sans': ["Dancing Script", 'cursive']
+    extend: {
+      backgroundImage: {
+        'lightBG': "url('/src/assets/images/lightBG.jpg')",
+        'darkBG': "url('/src/assets/images/darkBG.jpg')",
+      }
     },
-    extend: {},
   },
   plugins: [],
 }

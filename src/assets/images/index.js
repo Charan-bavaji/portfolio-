@@ -9,7 +9,9 @@ import css from "./css.webp";
 import javaScript from "./javascript.webp";
 import react1 from "./react.webp";
 import tailwind from "./tailwindcss.webp";
-
+// Background
+import lightBG from './lightBG.jpg';
+import darkBG from './darkBG.jpg';
 // other
 import postMan from "./postMan.png";
 import vsCode from "./vscode.webp";
@@ -25,7 +27,7 @@ import java1 from "./java.png";
 
 // project
 import project1 from "./pro1.png";
-
+import project2 from "./project2.png";
 
 export {
     html,
@@ -44,8 +46,11 @@ export {
     mongooDb1,
     java1,
     project1,
+    project2,
     github1,
     linkdin,
     twitter,
     insta,
+    lightBG,
+    darkBG
 }
