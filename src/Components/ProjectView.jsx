@@ -1,5 +1,6 @@
 import React from 'react'
 import video2 from '../assets/videos/project2.mp4'
+import { Link } from 'react-router-dom'
 const ProjectView = () => {
     return (
         <div className='mt-24 w-full h-auto flex justify-center items-center pb-10'>
@@ -15,10 +16,17 @@ const ProjectView = () => {
                             nesciunt sit, alias nobis, qui aperiam necessitatibus
                             unde facilis cupiditate nam veritatis labore blanditiis dolore eaque rerum harum.
                         </p>
-                        <div className='w-full'>
-                            <a href='https://github.com/Charan-bavaji?tab=repositories' className=' cursor-pointer border-2 border-slate-500 px-6 py-2 rounded-2xl lg:px-8 lg:py-2'>
-                                <button className='lg:text-lg'>Code</button>
-                            </a>
+                        <div className='flex flex-row gap-6'>
+                            <div className='w-auto'>
+                                <a href='https://github.com/Charan-bavaji?tab=repositories' className=' cursor-pointer border-2 border-slate-500 px-6 py-2 rounded-2xl lg:px-8 lg:py-2'>
+                                    <button className='lg:text-lg'>Code</button>
+                                </a>
+                            </div>
+                            <div className='w-full'>
+                                <Link to='/' className=' cursor-pointer border-2 border-slate-500 px-6 py-2 rounded-2xl lg:px-8 lg:py-2'>
+                                    <button className='lg:text-lg'>Code</button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </article>

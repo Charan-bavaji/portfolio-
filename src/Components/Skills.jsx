@@ -21,12 +21,14 @@ const Skills = () => {
     // 2xl	1536px
 
     return (
-        <section className=" mt-5 w-[95%] h-[auto] border-2 border-slate-700 rounded-2xl md:w-[80%] lg:w-[80%] backdrop-blur-sm bg-black/1">
-            <div className=" flex justify-center items-center p-5 mt-2 text-2xl">
-                <h1 className="font-semibold tracking-[2px]"> Skills</h1>
+        <section className=" mt-5 w-[95%] h-[auto] flex flex-col gap-6 rounded-2xl md:w-[80%] lg:w-[80%]">
+            <div className=" w-auto flex justify-start items-center p-2  mt-2 ml-5 text-2xl md:text-4xl lg:text-5xl  rounded-md ">
+                <h1 className="font-semibold text-white tracking-[2px]"> Ever improving <span className='  rounded-md bg-[#c59b5c] p-2 text-black font-bold'>
+                    Skills...
+                </span></h1>
             </div>
             <div className="flex flex-col justify-center items-center gap-3 pb-8 md:flex-row md:items-baseline md:px-5 md:py-5">
-                <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-slate-500 rounded-3xl pb-3">
+                <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-[#6a522f] rounded-3xl pb-3 backdrop-blur-sm bg-black/10">
                     <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                         <h1 className=" font-semibold tracking-[1px]">Frontend</h1>
                     </div>
@@ -48,7 +50,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-slate-500 rounded-3xl pb-3">
+                <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-[#6a522f] rounded-3xl pb-3 backdrop-blur-sm bg-black/10">
                     <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                         <h1 className="font-semibold tracking-[1px] ">Other</h1>
                     </div>
@@ -74,7 +76,7 @@ const Skills = () => {
 
                     </div>
                 </div>
-                <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-slate-500 rounded-3xl pb-3">
+                <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-[#6a522f] rounded-3xl pb-3 backdrop-blur-sm bg-black/10">
                     <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                         <h1 className=" font-semibold tracking-[1px]">Backend</h1>
                     </div>

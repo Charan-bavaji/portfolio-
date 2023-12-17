@@ -13,83 +13,102 @@ const Projects = () => {
 
     return (
         // Project border
-        <div  className=" mt-5 w-[95%] h-[auto] border-2 border-slate-700 rounded-2xl flex flex-col justify-center items-center md:w-[80%] lg:w-[80%] -z-0 backdrop-blur-sm bg-black/1">
-            <div className=" w-full flex justify-center items-center p-4 mt-2 text-2xl">
-                <h1 className=" leading-tight font-semibold tracking-[2px]">Projects</h1>
+        <div className=" mt-5 w-[95%] h-[auto] rounded-2xl  md:w-[80%] lg:w-[80%] -z-0 backdrop-blur-sm bg-black/1 flex flex-col gap-9">
+            {/* 
+            <div className=" w-[30%] flex justify-start items-center p-2 mt-2 ml-5 text-2xl md:text-4xl lg:text-5xl bg-[#c59b5c] rounded-md ">
+                <h1 className="font-semibold text-white tracking-[2px]"> Projects</h1>
+            </div> */}
+            <div className=" w-auto flex justify-start items-center mt-2 ml-5 text-2xl md:text-4xl lg:text-5xl  rounded-md ">
+                <h1 className="font-semibold text-white tracking-[2px]"> 7 + <span className='  rounded-md bg-[#c59b5c] p-2 text-black font-bold'>
+                    Projects
+                </span>  and counting...</h1>
             </div>
+            <div className='flex flex-col justify-center items-center'>
+                {/* project -1 container */}
+                <div className="w-[95%] h-auto border-2 border-[#6a522f] my-3 flex flex-col justify-center items-center rounded-3xl sm:w-[80%] md:flex md:flex-row md:w-[95%] lg:w-[70%] lg:py-6 shadow-lg ">
+                    <div className=" w-full h-fit p-3 sm:px-10 md:p-3 flex justify-center items-center">
+                        <img src={project1} alt='img' className="lg:h-[18rem] grayscale hover:grayscale-0 hover:cursor-pointer" />
+                    </div>
 
-            {/* project -1 container */}
-            <div className="w-[95%] h-auto border-2 border-slate-700 my-3 flex flex-col justify-center items-center rounded-3xl sm:w-[80%] md:flex md:flex-row md:w-[95%] lg:w-[70%] lg:py-6 shadow-lg transition duration-150 ease-in-out hover:-translate-y-4">
-                <div className=" w-full h-fit p-3 sm:px-10 md:p-3 flex justify-center items-center">
-                    <img src={project1} alt='img' className="lg:h-[18rem] grayscale hover:grayscale-0 hover:cursor-pointer" />
+                    {/* project title section */}
+                    <div className='w-full h-full px-3 lg:pr-10'>
+                        <div className="py-2 text-lg flex justify-start items-center">
+                            <h1 className='text-2xl font-bold lg:text-5xl lg:py-3 lg:font-bold'>Nike Shoes Store</h1>
+                        </div>
+                        <div className='w-auto h-10 flex gap-3 justify-start items-center py-6'>
+                            <h1 className='font-bold lg:text-xl text-[#c59b5c]'>Tech Stack</h1>
+                            <ul className="flex gap-3 justify-center items-center">
+                                <li>
+                                    <SkillBox icon={html} name={"html"} />
+                                </li>
+                                <li>
+                                    <SkillBox icon={css} name={"css"} />
+                                </li>
+                                <li>
+                                    <SkillBox icon={react1} name={"react"} />
+                                </li>
+                                <li>
+                                    <SkillBox icon={tailwind} name={"tailwind"} />
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='py-1'>
+                            <p className=" max-w-md text-[0.9rem] sm:text-base md:text-base lg:text-lg font-light ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsa, non nobis consequuntur reiciendis vero impedit iure,
+                                i </p>
+                        </div>
+                        <div className="w-full h-auto py-3 flex flex-col gap-3 ">
+                            <div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer bg-[#c59b5c] hover:bg-transparent  group "><a href='https://github.com/Charan-bavaji?tab=repositories' className=" group-hover:text-white text-lg text-black">Code</a></div>
+                            <Link to="/projectView" className="text-lg group"><div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer text-black bg-[#c59b5c] hover:bg-transparent group-hover:text-white">Preview</div></Link>
+                        </div>
+                    </div>
                 </div>
 
-                {/* project title section */}
-                <div className='w-full h-full px-3 lg:pr-10'>
-                    <div className="py-2 text-lg flex justify-start items-center"><h1 className='text-2xl font-bold lg:text-5xl lg:py-3 lg:font-bold'>Nike Shoes Store</h1></div>
-                    <div className='w-auto h-10 flex gap-3 justify-start items-center'>
-                        <h1 className='font-bold lg:text-xl'>Tech Stack</h1>
-                        <ul className="flex gap-3 justify-center items-center">
-                            <li>
-                                <SkillBox icon={html} name={"html"} />
-                            </li>
-                            <li>
-                                <SkillBox icon={css} name={"css"} />
-                            </li>
-                            <li>
-                                <SkillBox icon={react1} name={"react"} />
-                            </li>
-                            <li>
-                                <SkillBox icon={tailwind} name={"tailwind"} />
-                            </li>
-                        </ul>
+                {/* Project container 2 */}
+                <div className="w-[95%] h-auto border-2 border-[#6a522f] my-3 flex flex-col justify-center items-center rounded-3xl sm:w-[80%] md:flex md:flex-row md:w-[95%] lg:w-[70%] lg:py-6 shadow-lg " >
+                    <div className=" w-full h-fit p-3 sm:px-10 md:p-3 flex justify-center items-center">
+                        <img src={project2} alt='img' className="lg:h-[18rem] grayscale hover:grayscale-0 hover:cursor-pointer" />
                     </div>
-                    <div className='py-1'>
-                        <p className=" max-w-md text-[0.9rem] sm:text-base md:text-base lg:text-lg ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Ipsa, non nobis consequuntur reiciendis vero impedit iure,
-                            i </p>
-                    </div>
-                    <div className="w-full h-auto py-3 flex flex-col gap-3 ">
-                        <div className="flex justify-center items-start w-full h-full border-2 border-red-300 p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer"><a href='https://github.com/Charan-bavaji?tab=repositories' className="text-lg">Code</a></div>
-                        <Link to="/projectView" className="text-lg"><div className="flex justify-center items-start w-full h-full border-2 border-red-300 p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer">Preview</div></Link>
+                    {/* project title section */}
+                    <div className='w-full h-full px-3 lg:pr-10'>
+                        <div className="py-2 text-lg flex justify-start items-center"><h1 className='text-2xl font-bold lg:text-5xl lg:py-3 lg:font-bold'>Nike Shoes Store</h1></div>
+                        <div className='w-auto h-10 flex gap-3 justify-start items-center py-6'>
+                            <h1 className='font-bold lg:text-xl text-[#c59b5c]'>Tech Stack</h1>
+                            <ul className="flex gap-3 justify-center items-center">
+                                <li>
+                                    <SkillBox icon={html} name={"html"} />
+                                </li>
+                                <li>
+                                    <SkillBox icon={css} name={"css"} />
+                                </li>
+                                <li>
+                                    <SkillBox icon={react1} name={"react"} />
+                                </li>
+                                <li>
+                                    <SkillBox icon={tailwind} name={"tailwind"} />
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='py-1'>
+                            <p className=" max-w-md font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsa, non nobis consequuntur reiciendis vero impedit iure,
+                                i </p>
+                        </div>
+                        <div className="w-full h-auto py-3 flex flex-col gap-3 ">
+                            <div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer bg-[#c59b5c] hover:bg-transparent  group "><a href='https://github.com/Charan-bavaji?tab=repositories' className=" group-hover:text-white text-lg text-black">Code</a></div>
+                            <Link to="/projectView" className="text-lg group"><div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer text-black bg-[#c59b5c] hover:bg-transparent group-hover:text-white">Preview</div></Link>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            {/* Project container 2 */}
-            <div className="w-[95%] h-auto border-2 border-slate-700 my-3 flex flex-col justify-center items-center rounded-3xl sm:w-[80%] md:flex md:flex-row md:w-[95%] lg:w-[70%] lg:py-6 shadow-lg transition duration-150 ease-in-out hover:-translate-y-4" >
-                <div className=" w-full h-fit p-3 sm:px-10 md:p-3 flex justify-center items-center">
-                    <img src={project2} alt='img' className="lg:h-[18rem] grayscale hover:grayscale-0 hover:cursor-pointer" />
-                </div>
-                {/* project title section */}
-                <div className='w-full h-full px-3 lg:pr-10'>
-                    <div className="py-2 text-lg flex justify-start items-center"><h1 className='text-2xl font-bold lg:text-5xl lg:py-3 lg:font-bold'>Nike Shoes Store</h1></div>
-                    <div className='w-auto h-10 flex gap-3 justify-start items-center'>
-                        <h1 className='font-bold lg:text-xl'>Tech Stack</h1>
-                        <ul className="flex gap-3 justify-center items-center">
-                            <li>
-                                <SkillBox icon={html} name={"html"} />
-                            </li>
-                            <li>
-                                <SkillBox icon={css} name={"css"} />
-                            </li>
-                            <li>
-                                <SkillBox icon={react1} name={"react"} />
-                            </li>
-                            <li>
-                                <SkillBox icon={tailwind} name={"tailwind"} />
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='py-1'>
-                        <p className=" max-w-md ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Ipsa, non nobis consequuntur reiciendis vero impedit iure,
-                            i </p>
-                    </div>
-                    <div className="w-full h-auto py-3 flex flex-col gap-3 ">
-                        <div className="flex justify-center items-start w-full h-full border-2 border-red-300 p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1"><a className="text-lg">Code</a></div>
-                        <div className="flex justify-center items-start w-full h-full border-2 border-red-300 p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1"><a className="text-lg">Live Site</a></div>
-                    </div>
+            <div className='w-full flex justify-center items-center'>
+                <div className=' group w-[70%] flex justify-center items-center gap-3 bg-[#c59b5c] hover:bg-transparent border-2 border-[#6a522f] rounded-full font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer'>
+                    <h1 className='text-lg font-bold text-black py-3 rounded-full w-auto  group-hover:bg-transparent group-hover:text-white'>
+                        VIEW MORE
+                    </h1>
+                    <span className="material-symbols-outlined text-black group-hover:text-white">
+                        share_windows
+                    </span>
                 </div>
             </div>
         </div>

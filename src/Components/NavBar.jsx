@@ -37,9 +37,9 @@ const NavBar = () => {
                     <div className=" p-2 ">
                         <ul className="hidden md:flex justify-center items-center">
                             {content.map((item, index) => (
-                                <li className="p-3 text-md tracking-[2px] transition duration-150 ease-in-out hover:-translate-y-2" key={index}>
+                                <li className="p-3 text-md tracking-[2px] transition duration-150 ease-in-out hover:-translate-y-2 cursor-pointer" key={index}>
                                     {/* <a href={`#${item.name}`}> */}
-                                    <span className='font-extrabold'>{item.name}</span>
+                                    <span className=' font-light'>{item.name}</span>
                                     {/* </a> */}
                                 </li>
                             ))}
