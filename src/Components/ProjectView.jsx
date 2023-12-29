@@ -24,7 +24,7 @@ const ProjectView = () => {
                             </div>
                             <div className='w-full'>
                                 <Link to='/' className=' cursor-pointer border-2 border-slate-500 px-6 py-2 rounded-2xl lg:px-8 lg:py-2'>
-                                    <button className='lg:text-lg'>Code</button>
+                                    <button className='lg:text-lg'>home</button>
                                 </Link>
                             </div>
                         </div>
@@ -35,4 +35,4 @@ const ProjectView = () => {
     )
 }
 
-export default ProjectView
+export default ProjectView;

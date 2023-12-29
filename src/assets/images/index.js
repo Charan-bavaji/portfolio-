@@ -10,7 +10,7 @@ import javaScript from "./javascript.webp";
 import react1 from "./react.webp";
 import tailwind from "./tailwindcss.webp";
 // Background
-import lightBG from './lightBG.jpg';
+import lightBG from './linesLight.svg';
 import darkBG from './darkBG.jpg';
 // other
 import postMan from "./postMan.png";
@@ -19,11 +19,13 @@ import linux from "./Linux.png";
 import npm from "./npm.webp";
 import git from "./git.webp";
 import github from "./gitHub.png";
+import badge from './badge.png';
 // backend
-import nodeJs from "./node.webp";
+import nodeJs from "./node1.png";
 import express1 from "./express1.png";
 import mongooDb1 from "./mongoo.png";
 import java1 from "./java.png";
+import Api from './Api.png';
 
 // project
 import project1 from "./pro1.png";
@@ -45,6 +47,7 @@ export {
     express1,
     mongooDb1,
     java1,
+    Api,
     project1,
     project2,
     github1,
@@ -52,5 +55,6 @@ export {
     twitter,
     insta,
     lightBG,
-    darkBG
+    darkBG,
+    badge
 }

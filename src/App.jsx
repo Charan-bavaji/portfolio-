@@ -6,6 +6,7 @@ import SocialMedia from './Components/SocialMedia'
 import ProjectView from './Components/ProjectView'
 import { lightBG, darkBG } from './assets/images'
 import Skills from './Components/Skills'
+import Card from './Components/Card'
 function App() {
 
   // using id method 
@@ -18,7 +19,10 @@ function App() {
     {
       path: "/",
       element: <Home />
-
+    },
+    {
+      path: '/card',
+      element: <Card />
     },
     {
       path: "/projectView",

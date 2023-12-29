@@ -3,6 +3,21 @@ import profile from '../assets/profile.png';
 import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
+import {
+    html, css, javaScript, react1, postMan, vsCode,
+    linux,
+    npm,
+    tailwind,
+    git,
+    github,
+    nodeJs,
+    express1,
+    mongooDb1,
+    java1,
+    lightBG
+} from '../assets/images/index';
+import Card from './Card';
+import Certificates from './Certificates';
 // import Certificates from './Certificates';
 const Home = () => {
     // Add all responsive size here and jzt work on that Rather then checking for every divices!!!
@@ -13,11 +28,15 @@ const Home = () => {
     // lg	1024px	
     // xl	1280px
     // 2xl	1536px
+    const background = {
+        backgroundImage: `url(${lightBG})`,
+        // opacity: 0.2
+    };
     return (
         <div className=" w-full h-auto mt-24 flex justify-baseline items-center flex-col bg-no-repeat">
             <div className=" w-[95%] h-[auto] py-6  flex justify-center items-center rounded-2xl md:w-[80%]">
-                <div className="flex justify-center items-center flex-col-reverse p-5 gap-[1rem] sm:flex-row">
-                    <div className="max-w-sm  flex justify-start items-start flex-col sm:gap-5 md:gap-7 lg:max-w-md xl:max-w-2xl xl:p-5">
+                <div className="flex justify-center items-center flex-col-reverse p-5 gap-[3rem] sm:flex-row sm:gap-[1rem]">
+                    <div className="max-w-sm  flex justify-start items-start flex-col gap-6 sm:gap-5 md:gap-7 lg:max-w-md xl:max-w-2xl xl:p-5">
                         <div className=''>
                             <span className=" mb-[-3px] text-xs font-bold tracking-[1px] lg:text-sm">-hello</span>
                             <h1 className=" text-2xl tracking-[1px] md:text-3xl lg:text-4xl">I'am <span className=" text-3xl text-[#c59b5c] font-bold md:text-4xl lg:text-5xl xl:text-7xl">Charan R</span></h1>
@@ -25,8 +44,25 @@ const Home = () => {
                             <p className=" text-xs lg:py-4 lg:text-[18px] tracking-wider font-light leading-normal"> a simple example of a marketing page component that uses a stacked layout on small screens
                                 simple example of a marketing page component that u,</p>
                         </div>
-                        <div className=' mt- pt-2 '>
-                            <button className="w-[4rem] h-8  text-sm  border-2 border-[#6a522f] rounded-md md:w-[6rem] md:h-10 cursor-pointer font-bold transition duration-150 ease-in-out hover:-translate-y-2">View CV</button>
+                        <div className=' w-full mt- pt-2 flex justify-center items-center sm:justify-start gap-8 '>
+                            <button className="w-auto h-10 px-4 py-5 flex justify-center items-center tracking-widest text-md border-2 border-[#6a522f] rounded-xl  cursor-pointer font-bold transition duration-150 ease-in-out hover:-translate-y-2
+                              text-black hover:text-white bg-[#c59b5c] hover:bg-transparent shadow-lg">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mr-1 sm:mr-2 text-[16px] " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
+                                Get Resume</button>
+                            <button className="w-auto h-10 px-10 py-5 flex justify-center items-center text-md border-2 border-[#6a522f] rounded-xl  cursor-pointer font-bold transition duration-150 ease-in-out hover:-translate-y-2
+                              text-white backdrop-blur-sm bg-black/10 shadow-lg tracking-widest hover:text-black hover:bg-[#c59b5c]">
+                                Contact</button>
+                        </div>
+                        <div className='w-full'>
+                            <ul className=' flex gap-2 justify-center items-center sm:justify-start'>
+                                <li><span className='text-[14px] text-[#ffff]'>Current tech stack -</span></li>
+                                <li><img src={react1} alt="react" width={20} height={20} /></li>
+                                <li><img src={tailwind} alt="" width={20} height={20} /></li>
+                                <li><img src={express1} alt="" width={20} height={20} /></li>
+                                <li><img src={nodeJs} alt="" width={20} height={20} /></li>
+                                <li><img src={mongooDb1} alt="" width={20} height={20} /></li>
+                                <li><img src={vsCode} alt="" width={20} height={20} /></li>
+                            </ul>
                         </div>
                     </div>
                     <div className=" max-w-sm max-h-fit lg:max-w-lg">
@@ -34,16 +70,12 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full lg:h-[80vh] flex justify-center items-center mb-16'>
-                <Skills />
-            </div>
+            <Skills />
             <div className='w-full  flex justify-center items-center'>
                 <Projects />
             </div>
+            <Certificates />
             <Contact />
-
-            {/* <Certificates /> */}
-
         </div>
     )
 }
