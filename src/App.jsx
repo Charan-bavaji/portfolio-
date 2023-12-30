@@ -3,11 +3,11 @@ import Home from './Components/Home'
 import NavBar from './Components/NavBar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SocialMedia from './Components/SocialMedia'
-import ProjectView from './Components/ProjectView'
 import Skills from './Components/Skills'
 import Contact from './Components/Contact'
 import Projects from './Components/Projects'
 import About from './Components/About';
+import ProjectView from './Components/ProjectView';
 function App() {
   return (
     <main className=''>
@@ -26,8 +26,9 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<Projects />} />
-          <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/projectView' element={<ProjectView />} />
         </Routes>
       </Router>
     </main>
