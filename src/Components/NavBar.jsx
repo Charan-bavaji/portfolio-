@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     const content = [
-        { name: "Home" },
-        { name: "skills" },
-        { name: "Projects" },
-        { name: "Contact" },
-        { name: "About" },
+        { name: "Home", link: "" },
+        { name: "Skills", link: "skills" },
+        { name: "Projects", link: "projects" },
+        { name: "Contact", link: "contact" },
+        { name: "About", link: "about" }
     ];
     const scrollDown = () => {
         const scrollCal = window.innerHeight * 0.6;
@@ -39,11 +39,13 @@ const NavBar = () => {
                     <div className=" p-2 ">
                         <ul className="hidden md:flex justify-center items-center">
                             {content.map((item, index) => (
-                                <li className="p-3 text-md tracking-[2px] transition duration-150 ease-in-out hover:-translate-y-2 cursor-pointer" key={index}>
-                                    {/* <a href={`#${item.name}`}> */}
-                                    <span className=' font-light'>{item.name}</span>
-                                    {/* </a> */}
-                                </li>
+                                <Link to={`/${item.link}`} key={index}>
+                                    <li className="p-3 text-md tracking-[2px] transition duration-150 ease-in-out hover:-translate-y-2 cursor-pointer" key={index}>
+                                        {/* <a href={`#${item.name}`}> */}
+                                        <span className=' font-light'>{item.name}</span>
+                                        {/* </a> */}
+                                    </li>
+                                </Link>
                             ))}
                         </ul>
                     </div>
@@ -56,11 +58,11 @@ const NavBar = () => {
             </div>
 
             {lists && <div className=" relative w-full h-[50vh] flex flex-col justify-center items-center backdrop-blur-sm bg-black/20 md:hidden z-50">
-                <span className='py-3 m-1 px-20 text-md  transform ease-in-out delay-150 tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce'>Home</span>
-                <span className='py-3 m-1 px-20 text-md  transform ease-in-out delay-150 tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce'>Skills</span>
-                <span className='py-3 m-1 px-20 text-md  transform ease-in-out delay-150 tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce'>Project</span>
-                <span className='py-3 m-1 px-20 text-md  transform ease-in-out delay-150 tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce'>Contact</span>
-                <span className='py-3 m-1 px-20 text-md  transform ease-in-out delay-150 tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce'>About</span>
+                {
+                    content.map((item, index) => (
+                        <span key={index} className='py-3 m-1 px-20 text-md  transform ease-in-out delay-150 tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce'>{item.name}</span>
+                    ))
+                }
             </div>}
         </>
     )

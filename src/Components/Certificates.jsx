@@ -4,10 +4,10 @@ const Certificates = () => {
 
   const tech = ["HTML5", "CSS3", "JavaScript", "React-18", "Linux", "Tailwind css", "Chrome DevTools"];
   return (
-    <div className='w-full lg:h-[80vh] flex justify-center items-center mt-20 mb-10'>
+    <div className='w-full h-auto flex justify-center items-center mt-[5%]'>
       <div className=" mt-5 w-[95%] h-[auto] rounded-2xl  md:w-[80%] lg:w-[80%] -z-0 backdrop-blur-sm bg-black/1 flex flex-col gap-9">
         <article className=" w-auto flex justify-start items-start mt-2 ml-5 text-2xl md:text-4xl lg:text-5xl  rounded-md ">
-          <h1 className="font-semibold text-white tracking-[2px]">Certified <span className='  rounded-md bg-[#c59b5c] p-2 text-black font-bold'>
+          <h1 className="font-semibold text-white tracking-[2px]">Certified <span className='  rounded-md bg-[#c59b5c] p-1 sm:p-2 text-black font-bold'>
             Technology's
           </span></h1>
         </article>
@@ -37,4 +37,4 @@ const Certificates = () => {
   );
 }
 
-export default Certificates
+export default Certificates;
