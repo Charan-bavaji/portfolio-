@@ -30,6 +30,9 @@ import Api from './Api.png';
 // project
 import project1 from "./pro1.png";
 import project2 from "./project2.png";
+import arrowR from './arrowR.png';
+import arrowL from './arrowL.png';
+
 
 export {
     html,
@@ -56,5 +59,7 @@ export {
     insta,
     lightBG,
     darkBG,
-    badge
+    badge,
+    arrowR,
+    arrowL
 }

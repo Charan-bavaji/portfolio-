@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from 'react';
-
-const Example = ({ text1 }) => {
+const Example = () => {
 
     return (
         <>
-        
         </>
     );
 };

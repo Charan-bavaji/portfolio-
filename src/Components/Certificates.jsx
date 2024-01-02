@@ -23,7 +23,7 @@ const Certificates = () => {
           </div>
         </div>
         <div className='w-full flex justify-center items-center'>
-          <div className=' group w-[60%] sm:w-[40%] flex justify-center items-center bg-[#c59b5c] hover:bg-transparent border-2 border-[#6a522f] rounded-full font-bold tracking-wider transition duration-150 ease-in-out hover:translate-y-2 cursor-pointer'>
+          <div className=' group w-[15rem] sm:w-[40%] flex justify-center items-center bg-[#c59b5c] hover:bg-transparent border-2 border-[#6a522f] rounded-full font-bold tracking-wider transition duration-150 ease-in-out hover:translate-y-2 cursor-pointer'>
             <a href="https://codedamn.com/certificates" className=' py-3 rounded-full w-auto flex justify-center items-center  gap-3'>
               <h1 className='text-lg font-bold text-black  group-hover:bg-transparent group-hover:text-white tracking-widest'>
                 Certificates

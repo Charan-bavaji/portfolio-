@@ -40,9 +40,9 @@ const NavBar = () => {
                         <ul className="hidden md:flex justify-center items-center">
                             {content.map((item, index) => (
                                 <Link to={`/${item.link}`} key={index}>
-                                    <li className="p-3 text-md tracking-[2px] transition duration-150 ease-in-out hover:-translate-y-2 cursor-pointer" key={index}>
+                                    <li className=" group p-3 text-md tracking-[2px] transition duration-150 ease-in-out hover:-translate-y-2 cursor-pointer hover:text-[#c59b5c]" key={index}>
                                         {/* <a href={`#${item.name}`}> */}
-                                        <span className=' font-light'>{item.name}</span>
+                                        <span className=' group-hover:text-[#ffce85] font-light'>{item.name}</span>
                                         {/* </a> */}
                                     </li>
                                 </Link>
@@ -50,7 +50,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <div className="p-6 m-4">
-                        <span className="material-symbols-outlined rounded-full p-1 hover:bg-slate-500 cursor-pointer transition duration-150 ease-in-out hover:-translate-y-2" onClick={scrollDown}>
+                        <span className="material-symbols-outlined rounded-full p-1 hover:bg-[#c59b5c] hover:text-black cursor-pointer transition duration-150 ease-in-out hover:-translate-y-2" onClick={scrollDown}>
                             keyboard_double_arrow_down
                         </span>
                     </div>
@@ -60,7 +60,9 @@ const NavBar = () => {
             {lists && <div className=" relative w-full h-[50vh] flex flex-col justify-center items-center backdrop-blur-sm bg-black/20 md:hidden z-50">
                 {
                     content.map((item, index) => (
-                        <span key={index} className='py-3 m-1 px-20 text-md  transform ease-in-out delay-150 tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce'>{item.name}</span>
+                        <Link to={`/${item.link}`} key={index} className='py-3 m-1 px-20 text-md  transform ease-in-out delay-150 tracking-[0.1rem] hover:tracking-[0.2rem]  hover:animate-bounce'>
+                            <span>{item.name}</span>
+                        </Link>
                     ))
                 }
             </div>}

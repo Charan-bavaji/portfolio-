@@ -20,15 +20,15 @@ function App() {
           <NavBar />
         </div>
         <div className='hidden md:block fixed top-[60%] left-5 right-0 bottom-0 w-[5rem] z-50'>
-          <SocialMedia />
+          <SocialMedia flex={'flex-col'} />
         </div>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
           <Route path='/projectView' element={<ProjectView />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router>
     </main>

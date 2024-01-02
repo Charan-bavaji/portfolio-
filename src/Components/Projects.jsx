@@ -14,7 +14,7 @@ const Projects = () => {
 
     return (
         // Project border
-        <div className='w-full h-auto mt-[10%] pb-[6rem]  flex justify-center items-center flex-col'>
+        <div className='w-full h-auto pb-[6rem] flex justify-center items-center flex-col mt-[7rem] sm:mt-[7rem] md:mt-[10rem]'>
             <div className=" w-[95%] h-[auto] rounded-2xl  md:w-[80%] lg:w-[80%] -z-0 backdrop-blur-sm bg-black/1 flex flex-col gap-9">
                 <div className=" w-auto flex justify-start items-center mt-2 ml-5 text-2xl md:text-4xl lg:text-5xl  rounded-md ">
                     <h1 className="font-semibold text-white tracking-[2px]"> 8 + <span className='  rounded-md bg-[#c59b5c] p-1 sm:p-2 text-black font-bold'>

@@ -22,7 +22,7 @@ const Skills = () => {
     // 2xl	1536px
 
     return (
-        <div className='w-full lg:h-[auto] mt-[10%] flex justify-center items-center'>
+        <div className='w-full lg:h-[auto] flex justify-center items-center mt-[7rem] sm:mt-[7rem] md:mt-[10rem]'>
             <section className="  w-[95%] h-[auto] flex flex-col gap-6 rounded-2xl md:w-[80%] lg:w-[80%]">
                 <div className=" w-auto h-auto flex justify-start items-center p-2  mt-2 ml-5 text-2xl md:text-4xl lg:text-5xl  rounded-md ">
                     <h1 className="font-semibold text-white tracking-[2px]"> Ever improving <span className=' rounded-md bg-[#c59b5c] p-1 sm:p-2  text-black font-bold'>
