@@ -49,24 +49,13 @@ const About = () => {
                     </div>
                     <div>
                         <h1 className='text-3xl text-[#c59b5c] py-5'>Career Goals</h1>
-                        <p className='text-justify md:text-lg'>. My ultimate goal is to become a <span className='text-[#ffef88] font-semibold'> Full Stack Developer</span>, and I have already delved into advanced tech stacks like MERN, along with mastering tools such as Tailwind CSS, Java, npm, Linux, and Redux.</p>
+                        <p className='text-justify md:text-lg'>My ultimate goal is to become a <span className='text-[#ffef88] font-semibold'> Full Stack Developer</span>, and I have already delved into advanced tech stacks like MERN, along with mastering tools such as Tailwind CSS, Java, npm, Linux, and Redux.</p>
                     </div>
-
-                    {/* <p className='text-justify md:text-lg '>
-                        "As a motivated and skilled front-end developer in the early stages of my career,
-                        I am eager to bring my passion for web development and proficiency in HTML, CSS,
-                        JavaScript, ReactJS, Tailwind CSS, and more to a dynamic team. Currently completing
-                        my MCA, I have a solid foundation with a BCA degree and have actively explored
-                        back-end technologies like Node.js, Express, and MongoDB. Despite being a fresher,
-                        I have hands-on experience in building projects that showcase my versatility, such
-                        as the Disney Clone (utilizing Redux and React), DraftWood (an e-commerce platform
-                        built with the MERN stack), and user authentication projects. I am enthusiastic about
-                        creating websites that range from basic to complex and am always eager to learn new
-                        technologies in the ever-evolving front-end landscape. My ultimate goal is to become a
-                        Full Stack Developer, and I have already delved into advanced tech stacks like MERN,
-                        along with mastering tools such as Tailwind CSS, Java, npm, Linux, and Redux. I am excited
-                        about the prospect of contributing my skills and dedication to a forward-thinking team."
-                    </p> */}
+                    <div>
+                        <h1 className='text-3xl text-[#c59b5c] py-5'>Conclusion</h1>
+                        <p className='text-justify md:text-lg'>
+                            I have enough to build mediate Front-End applications, now I'm exploring the power of Back-end development and trying to learn something new.</p>
+                    </div>
                 </div>
             </div>
         </section>
