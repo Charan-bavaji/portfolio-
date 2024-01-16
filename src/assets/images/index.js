@@ -9,6 +9,7 @@ import css from "./css.webp";
 import javaScript from "./javascript.webp";
 import react1 from "./react.webp";
 import tailwind from "./tailwindcss.webp";
+import redux1 from "./redux.png";
 // Background
 import lightBG from './linesLight.svg';
 import darkBG from './darkBG.jpg';
@@ -39,6 +40,7 @@ export {
     css,
     javaScript,
     react1,
+    redux1,
     tailwind,
     postMan,
     vsCode,
