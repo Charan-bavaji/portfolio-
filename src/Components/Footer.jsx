@@ -2,15 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='w-full h-40 flex flex-col justify-center items-center '>
-      <div className='flex justify-center items-center gap-3'>
-        <div className="w-[7rem] md:w-[14rem] sm:w-[10rem] lg:w-[20rem] h-[2px] bg-slate-500 rounded-sm "></div>
-        <h1 className='text-4xl text-black'>X</h1>
-        <div className="w-[7rem] md:w-[14rem] sm:w-[10rem] lg:w-[20rem] h-[2px] bg-slate-500 rounded-sm "></div>
-      </div>
-      {/* <div className=' w-[60%] p-6 mx-9'>
-        <span id='font' className="font-sans font-bold text-4xl ">Charan R</span>
-      </div> */}
+    <div className='w-full h-24 flex flex-col justify-center items-center gap-10 bg-gradient-to-r from-transparent via-gray-600 to-transparent '>
+      <div className="w-[70%] h-[1px] bg-white rounded-sm"></div>
+      <h2 className='tracking-wider text-white text-[18px] font-extralight'>Designed and Coded by <a href='https://github.com/Charan-bavaji' className='underline underline-offset-4 tracking-wider text-[#ffd28f]'>Charan R</a></h2>
     </div>
   )
 }

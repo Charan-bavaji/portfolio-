@@ -2,9 +2,9 @@ import React from 'react';
 import { badge } from '../assets/images/index'
 const Certificates = () => {
 
-  const tech = ["HTML5", "CSS3", "JavaScript", "React-18", "Linux", "Tailwind css", "Chrome DevTools"];
+  const tech = ["HTML5", "CSS3", "JavaScript", "ReactJS", "Tailwind css", "Chrome DevTools", "+4"];
   return (
-    <div className='w-full h-auto flex justify-center items-center mt-[5%] mb-[3%]'>
+    <div className='w-full h-auto flex justify-center items-center mt-[5%] mb-[12%]'>
       <div className=" mt-5 w-[95%] h-[auto] rounded-2xl  md:w-[80%] lg:w-[80%] -z-0 backdrop-blur-sm bg-black/1 flex flex-col gap-9">
         <article className=" w-auto flex justify-start items-start mt-2 ml-5 text-2xl md:text-4xl lg:text-5xl  rounded-md ">
           <h1 className="font-semibold text-white tracking-[2px]">Certified <span className='  rounded-md bg-[#c59b5c] p-1 sm:p-2 text-black font-bold'>
@@ -16,7 +16,11 @@ const Certificates = () => {
            sm:py-10 md:py-12 '>
             {
               tech.map((item, index) => (
-                <span key={index} className=' backdrop-blur-sm b bg-white/5  sm:my-[5px] px-5 py-1 rounded-lg lg:px-8 lg:py-3 tracking-wider cursor-default shadow-xl'>{item}</span>
+                item === "+4" ?
+                  <span className=' backdrop-blur-sm b bg-white/5  sm:my-[5px] px-5 py-1 rounded-lg lg:px-8 lg:py-3 tracking-wider cursor-default shadow-xl text-[#ffbd5b]'>
+                    {item}
+                  </span> :
+                  <span key={index} className=' backdrop-blur-sm b bg-white/5  sm:my-[5px] px-5 py-1 rounded-lg lg:px-8 lg:py-3 tracking-wider cursor-default shadow-xl'>{item}</span>
               ))
             }
             <img src={badge} alt="" width={60} height={60} className=' absolute -top-5 -right-5' />

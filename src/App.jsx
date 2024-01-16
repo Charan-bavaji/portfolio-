@@ -12,7 +12,7 @@ function App() {
   return (
     <main className=''>
       <div className=" hidden md:flex fixed bottom-32 lg:bottom-36 md:-right-10 lg:-right-24 xl:-right-16 z-30 rotate-90 items-center space-x-3 ">
-        <p className="text-[10px] md:text-xs lg:text-sm cursor-pointer"><a href="mailto:charan.r7760@gmail.com">charan.r7760@gmail.com</a></p>
+        <p className="text-[10px] md:text-xs lg:text-sm cursor-pointer "><a href="mailto:charanbavaji.official@gmail.com" className=' text-[#ffd89e]'>charanbavaji.official@gmail.com</a></p>
         <div className="w-10 lg:w-16 h-[2px] bg-slate-500 rounded-sm "></div>
       </div>
       <Router>

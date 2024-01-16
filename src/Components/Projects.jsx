@@ -1,6 +1,6 @@
 import React from 'react'
 import SkillBox from './SkillBox';
-import { project1, html, css, react1, tailwind, project2 } from '../assets/images';
+import { project1, html, css, react1, tailwind, project2, nodeJs, mongooDb1, redux1 } from '../assets/images';
 import { Link } from 'react-router-dom';
 import Certificates from './Certificates';
 
@@ -23,16 +23,58 @@ const Projects = () => {
                 </div>
                 <div className='flex flex-col justify-center items-center'>
                     {/* project title section */}
+                    <div className="w-[95%] h-auto border-2 border-[#6a522f] my-3 flex flex-col justify-center items-center rounded-3xl sm:w-[80%] md:flex md:flex-row md:w-[95%] lg:w-[70%] lg:py-6 shadow-lg ">
+                        <div className=" w-full h-fit p-3 sm:px-10 md:p-3 flex justify-center items-center">
+                            <img src={project1} alt='img' className="lg:h-[18rem] grayscale hover:grayscale-0 hover:cursor-pointer" />
+                        </div>
+                        {/* project title section */}
+                        {/* project -1 container */}
+                        <div className='w-full h-full px-3 lg:pr-10'>
+                            <div className="py-2 text-lg flex justify-start items-center">
+                                <h1 className='text-2xl font-bold lg:text-4xl lg:py-3 lg:font-bold'>DraftWood Furniture</h1>
+                            </div>
+                            <div className='w-auto h-10 flex gap-3 justify-start items-center py-6'>
+                                <h1 className='font-bold lg:text-[14px] text-[#c59b5c]'>Tech Stack</h1>
+                                <ul className="flex gap-1 justify-center items-center">
+                                    <li>
+                                        <SkillBox icon={html} name={"html"} />
+                                    </li>
+                                    <li>
+                                        <SkillBox icon={css} name={"css"} />
+                                    </li>
+                                    <li>
+                                        <SkillBox icon={react1} name={"react"} />
+                                    </li>
+                                    <li>
+                                        <SkillBox icon={nodeJs} name={"tailwind"} />
+                                    </li>
+                                    <li>
+                                        <SkillBox icon={mongooDb1} name={"tailwind"} />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='py-2'>
+                                <p className=" max-w-md text-[0.9rem] sm:text-base md:text-base lg:text-[16px] font-light text-left tracking-wider  ">
+                                    Dynamic e-commerce platform, DreaftWood, showcasing expertise in creating an intuitive admin dashboard, implementing robust user authentication, and integrating a
+                                    secure payment section.
+                                </p>
+                            </div>
+                            <div className="w-full h-auto py-3 flex flex-col gap-3 ">
+                                <div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer bg-[#c59b5c] hover:bg-transparent  group "><a href='https://github.com/Charan-bavaji?tab=repositories' className=" group-hover:text-white text-lg text-black">Code</a></div>
+                                <Link to="/projectView" className="text-lg group"><div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer text-black bg-[#c59b5c] hover:bg-transparent group-hover:text-white">Preview</div></Link>
+                            </div>
+                        </div>
+                    </div>
                     <div className="w-[95%] h-auto border-2 border-[#6a522f] my-3 flex flex-col justify-center items-center rounded-3xl sm:w-[80%] md:flex md:flex-row md:w-[95%] lg:w-[70%] lg:py-6 shadow-lg " >
                         <div className=" w-full h-fit p-3 sm:px-10 md:p-3 flex justify-center items-center">
                             <img src={project2} alt='img' className="lg:h-[18rem] grayscale hover:grayscale-0 hover:cursor-pointer" />
                         </div>
                         {/* project title section */}
                         <div className='w-full h-full px-3 lg:pr-10'>
-                            <div className="py-2 text-lg flex justify-start items-center"><h1 className='text-2xl font-bold lg:text-5xl lg:py-3 lg:font-bold'>Nike Shoes Store</h1></div>
+                            <div className="py-2 text-lg flex justify-start items-center"><h1 className='text-2xl font-bold lg:text-4xl lg:py-3 lg:font-bold'>Nike Shoes Store</h1></div>
                             <div className='w-auto h-10 flex gap-3 justify-start items-center py-6'>
-                                <h1 className='font-bold lg:text-xl text-[#c59b5c]'>Tech Stack</h1>
-                                <ul className="flex gap-3 justify-center items-center">
+                                <h1 className='font-bold lg:text-[14px] text-[#c59b5c]'>Tech Stack</h1>
+                                <ul className="flex gap-1 justify-center items-center">
                                     <li>
                                         <SkillBox icon={html} name={"html"} />
                                     </li>
@@ -43,61 +85,22 @@ const Projects = () => {
                                         <SkillBox icon={react1} name={"react"} />
                                     </li>
                                     <li>
-                                        <SkillBox icon={tailwind} name={"tailwind"} />
+                                        <SkillBox icon={redux1} name={"tailwind"} />
                                     </li>
                                 </ul>
                             </div>
-                            <div className='py-1'>
-                                <p className=" max-w-md font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Ipsa, non nobis consequuntur reiciendis vero impedit iure,
-                                    i </p>
+                            <div className='py-2'>
+                                <p className=" max-w-md text-[0.9rem] sm:text-base md:text-base lg:text-[16px] font-light text-left tracking-wider ">
+                                    Developed a Disney+ clone using React and Redux. Implemented a responsive user interface, incorporated state management with Redux, and integrated Firebase for real-time database and authentication functionalities.
+                                </p>
                             </div>
                             <div className="w-full h-auto py-3 flex flex-col gap-3 ">
                                 <div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer bg-[#c59b5c] hover:bg-transparent  group "><a href='https://github.com/Charan-bavaji?tab=repositories' className=" group-hover:text-white text-lg text-black">Code</a></div>
-                                <Link to="/projectView" className="text-lg group"><div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer text-black bg-[#c59b5c] hover:bg-transparent group-hover:text-white">Preview</div></Link>
+                                <Link to="/projectView" className="text-lg group">
+                                    <div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer text-black bg-[#c59b5c] hover:bg-transparent group-hover:text-white">Preview</div></Link>
                             </div>
                         </div>
                     </div>
-                    {/* project -1 container */}
-                    <div className="w-[95%] h-auto border-2 border-[#6a522f] my-3 flex flex-col justify-center items-center rounded-3xl sm:w-[80%] md:flex md:flex-row md:w-[95%] lg:w-[70%] lg:py-6 shadow-lg ">
-                        <div className=" w-full h-fit p-3 sm:px-10 md:p-3 flex justify-center items-center">
-                            <img src={project1} alt='img' className="lg:h-[18rem] grayscale hover:grayscale-0 hover:cursor-pointer" />
-                        </div>
-
-                        {/* project title section */}
-                        <div className='w-full h-full px-3 lg:pr-10'>
-                            <div className="py-2 text-lg flex justify-start items-center">
-                                <h1 className='text-2xl font-bold lg:text-5xl lg:py-3 lg:font-bold'>Nike Shoes Store</h1>
-                            </div>
-                            <div className='w-auto h-10 flex gap-3 justify-start items-center py-6'>
-                                <h1 className='font-bold lg:text-xl text-[#c59b5c]'>Tech Stack</h1>
-                                <ul className="flex gap-3 justify-center items-center">
-                                    <li>
-                                        <SkillBox icon={html} name={"html"} />
-                                    </li>
-                                    <li>
-                                        <SkillBox icon={css} name={"css"} />
-                                    </li>
-                                    <li>
-                                        <SkillBox icon={react1} name={"react"} />
-                                    </li>
-                                    <li>
-                                        <SkillBox icon={tailwind} name={"tailwind"} />
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className='py-1'>
-                                <p className=" max-w-md text-[0.9rem] sm:text-base md:text-base lg:text-lg font-light ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Ipsa, non nobis consequuntur reiciendis vero impedit iure,
-                                    i </p>
-                            </div>
-                            <div className="w-full h-auto py-3 flex flex-col gap-3 ">
-                                <div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer bg-[#c59b5c] hover:bg-transparent  group "><a href='https://github.com/Charan-bavaji?tab=repositories' className=" group-hover:text-white text-lg text-black">Code</a></div>
-                                <Link to="/projectView" className="text-lg group"><div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer text-black bg-[#c59b5c] hover:bg-transparent group-hover:text-white">Preview</div></Link>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
                 <div className='w-full flex justify-center items-center'>
                     <div className=' group w-[70%] flex justify-center items-center gap-3 bg-[#c59b5c] hover:bg-transparent border-2 border-[#6a522f] rounded-full font-bold tracking-wider transition duration-150 ease-in-out hover:translate-y-2 cursor-pointer'>

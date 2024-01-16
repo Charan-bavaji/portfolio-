@@ -34,22 +34,43 @@ const Skills = () => {
                         <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                             <h1 className=" font-light tracking-[3px]">Frontend</h1>
                         </div>
-                        <div className='w-[95%] h-auto px-1 py-1 flex flex-wrap justify-center items-center  lg:gap-2'>
-                            <div className="p-1 m-1">
-                                <SkillBox icon={html} name={"html"} />
+                        <div className=''>
+                            <div className='w-[95%] h-auto px-1 py-1 flex flex-wrap justify-center items-center  lg:gap-2'>
+                                <div className="p-1 m-1">
+                                    <SkillBox icon={html} name={"html"} />
+                                </div>
+                                <div className="p-1 m-1">
+                                    <SkillBox icon={css} name={"css"} />
+                                </div>
+                                <div className="p-1 m-1">
+                                    <SkillBox icon={javaScript} name={"javaScript"} />
+                                </div>
+                                <div className="p-1 m-1">
+                                    <SkillBox icon={react1} name={"react1"} />
+                                </div>
+                                <div className="p-1 m-1">
+                                    <SkillBox icon={tailwind} name={"tailwind"} />
+                                </div>
                             </div>
-                            <div className="p-1 m-1">
-                                <SkillBox icon={css} name={"css"} />
-                            </div>
-                            <div className="p-1 m-1">
-                                <SkillBox icon={javaScript} name={"javaScript"} />
-                            </div>
-                            <div className="p-1 m-1">
-                                <SkillBox icon={react1} name={"react1"} />
-                            </div>
-                            <div className="p-1 m-1">
-                                <SkillBox icon={tailwind} name={"tailwind"} />
-                            </div>
+                            {/* <div className='hidden group-hover:flex'>
+                                <div className='w-[95%] px-1 py-1 flex flex-wrap justify-center items-center  lg:gap-2'>
+                                    <div className="p-1 m-1">
+
+                                    </div>
+                                    <div className="p-1 m-1">
+                                        CSS
+                                    </div>
+                                    <div className="p-1 m-1">
+                                        JavaScript
+                                    </div>
+                                    <div className="p-1 m-1">
+                                        React
+                                    </div>
+                                    <div className="p-1 m-1">
+                                        Tailwind
+                                    </div>
+                                </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-[#6a522f] rounded-3xl pb-3 backdrop-blur-sm bg-black/10 shadow-lg">

@@ -6,7 +6,7 @@ const ProjectView = () => {
         <div className='mt-24 w-full h-auto flex justify-center items-center pb-10'>
             <section className=' w-[95%] h-[auto] px-2 py-4  flex flex-col justify-center items-center rounded-2xl md:w-[80%]'>
                 <video className='rounded-lg w-[90%] pb-4' autoPlay loop controls>
-                    <source src={video2} type='video/mp4' />
+                    <source src="https://github.com/Charan-bavaji/portfolio-/raw/main/src/assets/videos/project2.mp4" type="video/mp4" />
                 </video>
                 <article className=' w-[90%]'>
                     <h1 className=' text-xl font-semibold tracking-wider py-2 lg:text-3xl'>DesineyLand-clone</h1>
