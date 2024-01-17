@@ -71,7 +71,7 @@ const Projects = () => {
                         </div>
                         {/* project title section */}
                         <div className='w-full h-full px-3 lg:pr-10'>
-                            <div className="py-2 text-lg flex justify-start items-center"><h1 className='text-2xl font-bold lg:text-4xl lg:py-3 lg:font-bold'>Nike Shoes Store</h1></div>
+                            <div className="py-2 text-lg flex justify-start items-center"><h1 className='text-2xl font-bold lg:text-4xl lg:py-3 lg:font-bold'>Disney Clone</h1></div>
                             <div className='w-auto h-10 flex gap-3 justify-start items-center py-6'>
                                 <h1 className='font-bold lg:text-[14px] text-[#c59b5c]'>Tech Stack</h1>
                                 <ul className="flex gap-1 justify-center items-center">
