@@ -3,7 +3,7 @@ import SocialMedia from "./SocialMedia";
 import { arrowL, arrowR } from '../assets/images';
 const Contact = () => {
   return (
-    <div className='w-full h-auto flex justify-center items-center flex-col mt-[7rem] sm:mt-[7rem] md:mt-[8rem]'>
+    <div className='w-full h-auto flex justify-center items-center flex-col mt-[7rem] mb-2 sm:mt-[7rem] md:mt-[8rem]'>
       <section className=' pb-3 w-[95%] h-auto rounded-2xl md:w-[80%] lg:w-[80%] backdrop-blur-sm bg-black/1  flex justify-start items-center flex-col'>
         <div className='w-[90%] m-2 p-5 md:w-[95%] flex justify-start items-center flex-col gap-6'>
           <h1 className='text-xl text-[#c59b5c] font-bold py-2 tracking-wider md:text-2xl'>

@@ -36,7 +36,7 @@ const Home = () => {
                             <p className=" text-[10px] lg:py-4 lg:text-[14px] tracking-wider font-light leading-normal">
                                 who loves building websites from simple to complex. As a fresher, I've dived
                                 into various technologies in this field. Excited to keep learning and aiming
-                                to become a <span className='text-[#ffd597]'>Full Stack Developer</span>. I'm also exploring backend stuff. Let's create something awesome together!"</p>
+                                to become a <span className='text-[#ffd597]'>Full Stack Developer</span>. I'm also exploring backend stuff. Let's create something awesome together!</p>
                         </div>
                         <div className=' w-full mt- pt-2 flex justify-center items-center sm:justify-start gap-4 '>
                             <a href="https://github.com/Charan-bavaji/portfolio-/raw/main/public/CR-Resume.pdf" download="CharanRES.pdf">
@@ -65,14 +65,14 @@ const Home = () => {
                         </div>
                     </div>
                     <div className=" max-w-sm max-h-fit lg:max-w-lg rounded-full">
-                        <img src={profile} alt='img' width={400} height={400} className='rounded-full' />
+                        <img src={profile} alt='img' width={400} height={400} className='borderHome' />
                     </div>
                 </div>
             </div>
             <Skills />
             <Projects />
             <Certificates />
-            <Footer />
+            {/* <Example /> */}
         </div>
     )
 }

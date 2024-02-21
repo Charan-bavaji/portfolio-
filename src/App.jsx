@@ -8,6 +8,7 @@ import Contact from './Components/Contact'
 import Projects from './Components/Projects'
 import About from './Components/About';
 import ProjectView from './Components/ProjectView';
+import Footer from './Components/Footer';
 function App() {
   return (
     <main className=''>
@@ -30,6 +31,7 @@ function App() {
           <Route path='/projectView' element={<ProjectView />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
     </main>
   )

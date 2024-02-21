@@ -4,7 +4,7 @@ const Certificates = () => {
 
   const tech = ["HTML5", "CSS3", "JavaScript", "ReactJS", "Tailwind css", "Chrome DevTools", "+4"];
   return (
-    <div className='w-full h-auto flex justify-center items-center mt-[5%] mb-[12%]'>
+    <div className='w-full h-auto flex justify-center items-center mt-[5%] mb-[5%]'>
       <div className=" mt-5 w-[95%] h-[auto] rounded-2xl  md:w-[80%] lg:w-[80%] -z-0 backdrop-blur-sm bg-black/1 flex flex-col gap-9">
         <article className=" w-auto flex justify-start items-start mt-2 ml-5 text-2xl md:text-4xl lg:text-5xl  rounded-md ">
           <h1 className="font-semibold text-white tracking-[2px]">Certified <span className='  rounded-md bg-[#c59b5c] p-1 sm:p-2 text-black font-bold'>
@@ -17,7 +17,7 @@ const Certificates = () => {
             {
               tech.map((item, index) => (
                 item === "+4" ?
-                  <span className=' backdrop-blur-sm b bg-white/5  sm:my-[5px] px-5 py-1 rounded-lg lg:px-8 lg:py-3 tracking-wider cursor-default shadow-xl text-[#ffbd5b]'>
+                  <span key={index} className=' backdrop-blur-sm b bg-white/5  sm:my-[5px] px-5 py-1 rounded-lg lg:px-8 lg:py-3 tracking-wider cursor-default shadow-xl text-[#ffbd5b]'>
                     {item}
                   </span> :
                   <span key={index} className=' backdrop-blur-sm b bg-white/5  sm:my-[5px] px-5 py-1 rounded-lg lg:px-8 lg:py-3 tracking-wider cursor-default shadow-xl'>{item}</span>

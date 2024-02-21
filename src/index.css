@@ -22,7 +22,7 @@ a {
 /* Firefox scrollbar */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #888 #000000;
+  scrollbar-color: #888 #353535;
 }
 
 /* Select the scrollbar */
@@ -37,8 +37,8 @@ a {
 /* Adjust the height of the scrollbar thumb in Chrome */
 ::-webkit-scrollbar-thumb {
   background: #888; /* Color of the scrollbar handle */
-  border-radius: 6px; /* Rounded corners */
-  height: 30px; /* Set the height to a specific value, e.g., "small" */
+  border-radius: 8px; /* Rounded corners */
+  height: 1rem; /* Set the height to a specific value, e.g., "small" */
 }
 
 /* Track */

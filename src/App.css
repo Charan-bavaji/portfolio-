@@ -7,3 +7,6 @@
 #font {
   font-family: "Dancing Script", cursive;
 }
+.borderHome {
+  border-radius: 77% 23% 79% 21% / 39% 52% 48% 61%;
+}
