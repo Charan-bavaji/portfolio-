@@ -10,3 +10,6 @@
 .borderHome {
   border-radius: 77% 23% 79% 21% / 39% 52% 48% 61%;
 }
+.clip {
+  border-radius: 100% 0% 100% 0% / 37% 100% 0% 63%;
+}
