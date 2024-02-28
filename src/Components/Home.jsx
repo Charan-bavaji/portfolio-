@@ -64,8 +64,8 @@ const Home = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className=" max-w-sm max-h-fit lg:max-w-lg rounded-full">
-                        <img src={profile} alt='img' width={400} height={400} className='borderHome' />
+                    <div className=" max-w-sm max-h-fit lg:max-w-lg rounded-full overflow-hidden">
+                        <img src={profile} alt='img' width={400} height={400} />
                     </div>
                 </div>
             </div>

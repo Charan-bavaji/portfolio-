@@ -30,7 +30,7 @@ const Skills = () => {
                     </span></h1>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-3 pb-8 md:flex-row md:items-baseline md:px-5 md:py-5">
-                    <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-[#6a522f] rounded-3xl pb-3 backdrop-blur-sm bg-black/10 shadow-lg">
+                    <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-[#6a522f] rounded-3xl pb-3 backdrop-blur-sm bg-black/10 shadow-lg transition duration-150 ease-in-out hover:-translate-y-2">
                         <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                             <h1 className=" font-light tracking-[3px]">Frontend</h1>
                         </div>
@@ -73,7 +73,7 @@ const Skills = () => {
                             </div> */}
                         </div>
                     </div>
-                    <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-[#6a522f] rounded-3xl pb-3 backdrop-blur-sm bg-black/10 shadow-lg">
+                    <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-[#6a522f] rounded-3xl pb-3 backdrop-blur-sm bg-black/10 shadow-lg transition duration-150 ease-in-out hover:-translate-y-2">
                         <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                             <h1 className=" font-light tracking-[3px] ">Other</h1>
                         </div>
@@ -99,7 +99,7 @@ const Skills = () => {
 
                         </div>
                     </div>
-                    <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-[#6a522f] rounded-3xl pb-3 backdrop-blur-sm bg-black/10 shadow-lg">
+                    <div className=" w-[95%] flex justify-center items-center flex-col border-2 border-[#6a522f] rounded-3xl pb-3 backdrop-blur-sm bg-black/10 shadow-lg transition duration-150 ease-in-out hover:-translate-y-2">
                         <div className=" flex justify-center items-center p-2 mt-2 text-lg">
                             <h1 className=" font-light tracking-[3px]">Backend</h1>
                         </div>

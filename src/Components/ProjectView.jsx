@@ -1,7 +1,7 @@
 import React from 'react'
 import video2 from '../assets/videos/project2.mp4'
 import { Link } from 'react-router-dom'
-const ProjectView = () => {
+const ProjectView = (props) => {
     return (
         <div className='mt-24 w-full h-auto flex justify-center items-center pb-10'>
             <section className=' w-[95%] h-[auto] px-2 py-4  flex flex-col justify-center items-center rounded-2xl md:w-[80%]'>
@@ -9,12 +9,14 @@ const ProjectView = () => {
                     <source src="https://github.com/Charan-bavaji/portfolio-/raw/main/src/assets/videos/project2.mp4" type="video/mp4" />
                 </video>
                 <article className=' w-[90%]'>
-                    <h1 className=' text-xl font-semibold tracking-wider py-2 lg:text-3xl'>DesineyLand-clone</h1>
+                    <h1 className=' text-xl font-semibold tracking-wider py-2 lg:text-3xl'>DesineyLand</h1>
                     <div className=' md:w-[80%]'>
                         <p className=' text-sm tracking-wider pb-8 lg:text-base'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum optio libero sed
-                            nesciunt sit, alias nobis, qui aperiam necessitatibus
-                            unde facilis cupiditate nam veritatis labore blanditiis dolore eaque rerum harum.
+                            Developed a Disney clone web application using React and Redux for frontend state management,
+                            providing users with an immersive experience reminiscent of the Disney brand.
+                            Leveraged Firebase for backend services, including user authentication and real-time database
+                            functionality, ensuring secure access to content and dynamic updates.
+
                         </p>
                         <div className='flex flex-row gap-6'>
                             <div className='w-auto'>

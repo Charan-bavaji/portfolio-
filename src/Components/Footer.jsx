@@ -22,7 +22,7 @@ const Footer = () => {
           <h3 id='font' className='text-xl text-gray-800 lg:text-md font-thin'>Frontend Developer</h3>
         </div>
         <div className='w-auto'>
-          <span className='tracking-wider text-slate-900 font-sans'>
+          <span className='tracking-wider text-white font-sans'>
             Please don't hesitate to reach out!
           </span>
           {/* <div className=' md:hidden p-2 w-auto'>

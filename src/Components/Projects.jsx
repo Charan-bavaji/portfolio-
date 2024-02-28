@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import Certificates from './Certificates';
 import ProjectView from './ProjectView';
 const Projects = () => {
-
     // sm	640px	
     // md	768px	
     // lg	1024px	
