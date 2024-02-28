@@ -3,7 +3,7 @@ import SkillBox from './SkillBox';
 import { project1, html, css, react1, tailwind, project2, nodeJs, mongooDb1, redux1 } from '../assets/images';
 import { Link } from 'react-router-dom';
 import Certificates from './Certificates';
-
+import ProjectView from './ProjectView';
 const Projects = () => {
 
     // sm	640px	
@@ -11,7 +11,6 @@ const Projects = () => {
     // lg	1024px	
     // xl	1280px
     // 2xl	1536px
-
     return (
         // Project border
         <div className='w-full h-auto pb-[6rem] flex justify-center items-center flex-col mt-[7rem] sm:mt-[7rem] md:mt-[10rem]'>
@@ -61,7 +60,7 @@ const Projects = () => {
                             </div>
                             <div className="w-full h-auto py-3 flex flex-col gap-3 ">
                                 <div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer bg-[#c59b5c] hover:bg-transparent  group "><a href='https://github.com/Charan-bavaji?tab=repositories' className=" group-hover:text-white text-lg text-black">Code</a></div>
-                                <Link to="/projectView" className="text-lg group"><div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer text-black bg-[#c59b5c] hover:bg-transparent group-hover:text-white">Preview</div></Link>
+                                <Link to="/projectView2" className="text-lg group"><div className="flex justify-center items-start w-full h-full border-2 border-[#6a522f] p-2 rounded-3xl font-bold tracking-wider transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer text-black bg-[#c59b5c] hover:bg-transparent group-hover:text-white">Preview</div></Link>
                             </div>
                         </div>
                     </div>
