@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../assets/profile1.png';
+import profile from '../assets/me.png';
 import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
