@@ -2,7 +2,7 @@ import React from 'react';
 import { badge } from '../assets/images/index'
 const Certificates = () => {
 
-  const tech = ["HTML5", "CSS3", "JavaScript", "ReactJS", "Tailwind css", "Chrome DevTools", "+4"];
+  const tech = ["HTML5", "CSS3", "JavaScript", "ReactJS", "Tailwind css", "DevOps", "+4"];
   return (
     <div className='w-full h-auto flex justify-center items-center mt-[5%] mb-[5%]'>
       <div className=" mt-5 w-[95%] h-[auto] rounded-2xl  md:w-[80%] lg:w-[80%] -z-0 backdrop-blur-sm bg-black/1 flex flex-col gap-9">
