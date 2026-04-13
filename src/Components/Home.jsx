@@ -34,9 +34,7 @@ const Home = () => {
                             <h1 className=" text-2xl tracking-[1px] md:text-3xl lg:text-4xl">I am <span className=" text-3xl text-[#c59b5c] font-bold md:text-4xl lg:text-5xl xl:text-7xl">Charan R</span></h1>
                             <h1 className=' text-3xl font-[900] text-[#c59b5c] tracking-[1px] md:text-4xl lg:text-5xl xl:text-6xl '>Frontend Developer</h1>
                             <p className=" text-[10px] lg:py-4 lg:text-[14px] tracking-wider font-light leading-normal">
-                                who loves building websites from simple to complex. As a fresher, I've dived
-                                into various technologies in this field. Excited to keep learning and aiming
-                                to become a <span className='text-[#ffd597]'>Full Stack Developer</span>. I'm also exploring backend stuff. Let's create something awesome together!</p>
+                                Full Stack Developer specializing in the MERN Stack (MongoDB, Express.js, React.js, Node.js) with 2+ years of hands-on experience building scalable web applications, RESTful APIs, and admin dashboards. Skilled in React.js, Node.js, JavaScript (ES6+), SQL, GCP, and responsive UI development. Delivered production-ready projects across real estate, healthcare, and e-commerce domains — from concept to deployment</p>
                         </div>
                         <div className=' w-full mt- pt-2 flex justify-center items-center sm:justify-start gap-4 '>
                             <a href="https://github.com/Charan-bavaji/portfolio-/raw/main/public/Charan-R.pdf" download="CharanRES.pdf">
