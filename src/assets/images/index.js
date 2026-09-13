@@ -31,7 +31,7 @@ import Api from './Api.png';
 //devops
 import docker from './Docker.png';
 import jenkins from './Jenkins.png';
-import aws from './Aws.png';
+import aws from './AWS.png';
 import terraform from './Terraform.png';
 import ansible from "./Ansible.png";
 import kubernetes from './kubernetes.webp';
