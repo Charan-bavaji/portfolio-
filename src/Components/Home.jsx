@@ -14,7 +14,12 @@ import {
     express1,
     mongooDb1,
     java1,
-    lightBG
+    lightBG,
+    docker,
+    jenkins,
+    aws,
+    terraform,
+    kubernetes
 } from '../assets/images/index';
 import Card from './Card';
 import Certificates from './Certificates';
@@ -32,12 +37,12 @@ const Home = () => {
                         <div className=''>
                             <span className=" mb-[-3px] text-xs font-bold tracking-[1px] lg:text-sm">-hello</span>
                             <h1 className=" text-2xl tracking-[1px] md:text-3xl lg:text-4xl">I am <span className=" text-3xl text-[#c59b5c] font-bold md:text-4xl lg:text-5xl xl:text-7xl">Charan R</span></h1>
-                            <h1 className=' text-3xl font-[900] text-[#c59b5c] tracking-[1px] md:text-4xl lg:text-5xl xl:text-6xl '>Full Stack Developer</h1>
+                            <h1 className=' text-3xl font-[900] text-[#c59b5c] tracking-[1px] md:text-4xl lg:text-5xl xl:text-6xl '>DevOps Engineer</h1>
                             <p className=" text-[10px] lg:py-4 lg:text-[14px] tracking-wider font-light leading-normal">
-                                Full Stack Developer specializing in the MERN Stack (MongoDB, Express.js, React.js, Node.js) with 1+ years of hands-on experience building scalable web applications, RESTful APIs, and admin dashboards. Skilled in React.js, Node.js, JavaScript (ES6+), SQL, GCP, and responsive UI development. Delivered production-ready projects across real estate, healthcare, and e-commerce domains — from concept to deployment</p>
+                                DevOps Engineer with hands-on experience building CI/CD pipelines, containerizing applications, and provisioning cloud infrastructure on AWS. Skilled in Jenkins, Docker, Kubernetes, Terraform, Ansible, and Linux, with a strong foundation in scripting and automation. My background in full-stack development (MERN) gives me a real understanding of the applications I deploy — from source code to production — helping me build pipelines and infrastructure that actually fit how developers work.</p>
                         </div>
                         <div className=' w-full mt- pt-2 flex justify-center items-center sm:justify-start gap-4 '>
-                            <a href="https://github.com/Charan-bavaji/portfolio-/raw/main/public/Charan_R.pdf" download="CharanRES.pdf">
+                            <a href="https://github.com/Charan-bavaji/portfolio-/raw/main/public/Charan_Resume_12-09-26.pdf" download="Charan_Resume_12-09-26.pdf">
                                 <button className="w-auto h-10 px-2 py-3 sm:px-4 sm:py-5 flex justify-center items-center tracking-widest text-md border-2 border-[#6a522f] rounded-xl  cursor-pointer font-bold transition duration-150 ease-in-out hover:-translate-y-2
                               text-black hover:text-white bg-[#c59b5c] hover:bg-transparent shadow-lg text-sm">
                                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className=" mr-2 text-[16px] " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
@@ -50,15 +55,16 @@ const Home = () => {
                                     Contact</button>
                             </Link>
                         </div>
-                        <div className='w-full'>
-                            <ul className=' flex gap-2 justify-center items-center sm:justify-start'>
+                                                <div className='w-full'>
+                            <ul className=' flex gap-2 justify-center items-center sm:justify-start flex-wrap'>
                                 <li><span className='text-[14px] text-[#ffff]'>Current tech stack -</span></li>
-                                <li><img src={react1} alt="react" width={20} height={20} /></li>
-                                <li><img src={tailwind} alt="" width={20} height={20} /></li>
-                                <li><img src={express1} alt="" width={20} height={20} /></li>
-                                <li><img src={nodeJs} alt="" width={20} height={20} /></li>
-                                <li><img src={mongooDb1} alt="" width={20} height={20} /></li>
-                                <li><img src={vsCode} alt="" width={20} height={20} /></li>
+                                <li><img src={docker} alt="docker" width={20} height={20} /></li>
+                                <li><img src={jenkins} alt="jenkins" width={20} height={20} /></li>
+                                <li><img src={aws} alt="aws" width={20} height={20} /></li>
+                                <li><img src={kubernetes} alt="kubernetes" width={20} height={20} /></li>
+                                <li><img src={terraform} alt="terraform" width={20} height={20} /></li>
+                                <li><img src={linux} alt="linux" width={20} height={20} /></li>
+                                <li><img src={git} alt="git" width={20} height={20} /></li>
                             </ul>
                         </div>
                     </div>

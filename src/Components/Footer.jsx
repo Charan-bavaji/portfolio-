@@ -19,7 +19,7 @@ const Footer = () => {
       <div className='flex w-full flex-col sm:flex-row justify-center items-center md:justify-evenly'>
         <div className='p-4 tracking-wider w-auto text-start'>
           <h1 id='font' className='text-4xl lg:text-6xl text-gray-800  '>Charan R</h1>
-          <h3 id='font' className='text-xl text-gray-800 lg:text-md font-thin'>Frontend Developer</h3>
+          <h3 id='font' className='text-xl text-gray-800 lg:text-md font-thin'>Devops Engineer</h3>
         </div>
         <div className='w-auto'>
           <span className='tracking-wider text-white font-sans'>

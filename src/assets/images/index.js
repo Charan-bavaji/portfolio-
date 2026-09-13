@@ -28,12 +28,24 @@ import mongooDb1 from "./mongoo.png";
 import java1 from "./java.png";
 import Api from './Api.png';
 
+//devops
+import docker from './docker.png';
+import jenkins from './jenkins.png';
+import aws from './aws.png';
+import terraform from './/HashiCorp Terraform.png';
+import ansible from "./Ansible.png";
+import kubernetes from './kubernetes.webp';
+import prometheus from './Prometheus.png';
+import grafana from './Grafana.png';
+// import sonarQube from './sonarQube.png';
+
 // project
 import project1 from "./pro1.png";
 import project2 from "./project2.png";
 import arrowR from './arrowR.png';
 import arrowL from './arrowL.png';
-
+import crible from './Crible-Project.png';
+import U2collabSS from './U2collab.png';
 
 export {
     html,
@@ -53,6 +65,15 @@ export {
     mongooDb1,
     java1,
     Api,
+    docker,
+    jenkins,
+    aws,
+    terraform,
+    ansible,
+    kubernetes,
+    prometheus,
+    grafana,
+    // sonarQube,
     project1,
     project2,
     github1,
@@ -63,5 +84,7 @@ export {
     darkBG,
     badge,
     arrowR,
-    arrowL
+    arrowL,
+    crible,
+    U2collabSS
 }
