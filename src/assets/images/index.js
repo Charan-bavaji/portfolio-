@@ -30,9 +30,9 @@ import Api from './Api.png';
 
 //devops
 import docker from './Docker.png';
-import jenkins from './jenkins.png';
-import aws from './aws.png';
-import terraform from './/HashiCorp Terraform.png';
+import jenkins from './Jenkins.png';
+import aws from './Aws.png';
+import terraform from './Terraform.png';
 import ansible from "./Ansible.png";
 import kubernetes from './kubernetes.webp';
 import prometheus from './Prometheus.png';
