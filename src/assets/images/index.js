@@ -29,7 +29,7 @@ import java1 from "./java.png";
 import Api from './Api.png';
 
 //devops
-import docker from './docker.png';
+import docker from './Docker.png';
 import jenkins from './jenkins.png';
 import aws from './aws.png';
 import terraform from './/HashiCorp Terraform.png';
